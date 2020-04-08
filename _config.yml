@@ -22,8 +22,8 @@ title: Open Source Medical Supplies
 email: info@opensourcemedicalsupplies.org
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "opensourcemedicalsupplies.org" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: osms_official
-github_username: bh0085
+twitter_username: OSMedSupplies
+github_username: osms-landing
 
 # Build settings
 theme: minima
