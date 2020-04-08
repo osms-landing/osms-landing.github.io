@@ -20,13 +20,13 @@
 
 title: Open Source Medical Supplies
 email: info@opensourcemedicalsupplies.org
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "opensourcemedicalsupplies.org" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: osms_official
 github_username: bh0085
 
 # Build settings
-theme: jekyll-theme-slate
+theme: minima
 plugins:
   - jekyll-feed
 
