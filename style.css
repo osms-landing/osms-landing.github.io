@@ -22,6 +22,12 @@
 
 }
 
+#banner img{
+
+    width: 250px;
+    margin-left: -152px;
+}
+
 #logo-schmidt {
     max-height: 6em;
 }
