@@ -97,3 +97,11 @@
     right:0px;
     z-index:-1;
 }
+
+
+.site-header{
+    display:none;
+}
+body{
+    padding-top:20vh;
+}
