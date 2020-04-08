@@ -105,3 +105,35 @@
 body{
     padding-top:20vh;
 }
+
+section{
+    margin-top:2em;
+}
+
+.spacer{
+    padding-top: 100px;
+}
+.h1-background{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    padding-left: 220px;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    margin-bottom: 2em;
+    background-image:linear-gradient(to right, rgba(247, 149,76,1), rgba(244, 126,78,1));
+}
+.h1-blue-background{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    padding-left: 220px;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    margin-bottom: 2em;
+    background-image:linear-gradient(to right, rgba(125, 162,255,1), rgba(39, 96,255,1));
+}
+
+.has-inverted-header h1{
+    color:white;
+}
