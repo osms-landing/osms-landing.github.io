@@ -9,7 +9,6 @@ layout: default
 
 <div class="container">
 
-<h1>Open Source Medical Supplies</h1>
 <p>Created in response to the COVID-19 pandemic, Open Source Medical Supplies helps local fabricators and institutions responsibly create and distribute sorely needed protective gear and medical equipment to local communities in crisis, providing medically and technically reviewed open-source design plans to fabricators of all scales and guides to community organizers who want to help organize effective local support efforts for their region.</p>
 
 <h1>OSMS Medical Supply and Local Response Guides</h1>
