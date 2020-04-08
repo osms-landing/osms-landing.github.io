@@ -1,0 +1,93 @@
+.sponsor-images img {
+    margin: 2em;
+}
+
+.guides.row {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    
+}
+
+.guide.col {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#under-construction {
+    color: white;
+    line-height:1.9em;
+    padding:3em;
+    height:350px;
+
+
+}
+
+#logo-schmidt {
+    max-height: 6em;
+}
+
+#logo-tri {
+    max-height: 3em;
+}
+
+#logo-resolve {
+    max-height: 3em;
+}
+
+
+#under-construction,#intro-content,#intro-background-container{
+    height:300px;
+}
+
+#under-construction{
+    padding:0px;
+    margin-top:3em;
+    margin-bottom:3em;
+}
+#intro-background-container{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+}
+
+#intro-content{
+    padding-top:5em;
+    left: 0px;
+    position:relative;
+}
+
+#intro-content p{
+    -webkit-line-clamp: 6;
+    max-lines: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+#intro-background{
+    background-image:url("/assets/img/collage.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    overflow:hidden;
+    position:absolute;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    z-index:-1;
+}
+
+#intro-fade{
+    background-color:rgba(0, 0, 0,.8);
+}
+
+#intro-fade{
+    position:absolute;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    z-index:-1;
+}
