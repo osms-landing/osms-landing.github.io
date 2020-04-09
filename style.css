@@ -1,3 +1,10 @@
+h1{
+    font-size:2em;
+}
+h2{
+    font-size:1.5em;
+}
+
 .sponsor-images img {
     margin: 2em;
 }
@@ -13,19 +20,74 @@
     padding-right: 2em;
 }
 
-#under-construction {
+/* #under-construction {
     color: white;
     line-height:1.9em;
     padding:3em;
     height:350px;
 
 
+} */
+
+img{
+    max-width:100%;
 }
 
+#banner{
+    text-align:center;
+}
 #banner img{
-
     width: 250px;
-    margin-left: -152px;
+}
+
+#super-banner{
+    height:40vh;
+    position:relative;
+    width:100%;
+    margin-top:0px;
+}
+#super-banner h1{
+    white-space: normal;
+    font-size: 3.5rem;
+    font-weight: bolder;
+    max-width: 10em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#super-banner .background-image{
+    background-image:url("/assets/img/osms-surgeons.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    position:absolute;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    z-index:-2;
+}
+
+#super-banner .background-dimmer{
+    background-color:rgba(0,0,0,.3
+    );
+
+    position:absolute;
+    top:0px;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    z-index:-2;
+}
+
+#super-banner .text-overlay{
+    color:white;
+    position:relative;
+    font-weight:bold;
+    text-align:center;
+    top:100%;
+    transform:translate(0%, -100%);
+    padding:2em;
 }
 
 #logo-schmidt {
@@ -41,7 +103,7 @@
 }
 
 
-#under-construction,#intro-content,#intro-background-container{
+/* #under-construction,#intro-content,#intro-background-container{
     height:300px;
 }
 
@@ -87,23 +149,17 @@
 
 #intro-fade{
     background-color:rgba(0, 0, 0,.8);
-}
-
-#intro-fade{
     position:absolute;
     top:0px;
     bottom:0px;
     left:0px;
     right:0px;
     z-index:-1;
-}
+} */
 
 
-.site-header{
-    display:none;
-}
-body{
-    padding-top:20vh;
+#guides h1{
+    text-align:center;
 }
 
 section{
@@ -113,11 +169,11 @@ section{
 .spacer{
     padding-top: 100px;
 }
+
 .h1-background{
     position: absolute;
     left: 0px;
     right: 0px;
-    padding-left: 220px;
     padding-top: .5em;
     padding-bottom: .5em;
     margin-bottom: 2em;
@@ -127,7 +183,6 @@ section{
     position: absolute;
     left: 0px;
     right: 0px;
-    padding-left: 220px;
     padding-top: .5em;
     padding-bottom: .5em;
     margin-bottom: 2em;
@@ -136,4 +191,16 @@ section{
 
 .has-inverted-header h1{
     color:white;
+}
+
+#footer{
+    padding-top:3em;
+    padding-bottom:2em;
+    text-align:center;
+
+}
+#footer>li{
+    display:inline-block;
+    margin-left:1em;
+    margin-right:1em;
 }
