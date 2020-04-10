@@ -21,7 +21,17 @@ layout: main
 
 </section>
 
-HELLO WORLD
+<ul>
+
+{% for d in site.data.ms %}
+
+<li>
+	<a href="{{d.['Computed Doc Link']}}">Document Link</a> {% if d.['Target Audience'] %} {{d.['Target Audience']}}{% endif %}
+</li>
+{% endfor %}
+</ul>
+
+
 
 <div class="container">
 	<div class="row">
