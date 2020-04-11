@@ -25,7 +25,12 @@ layout: main
 <ul>
 {% for d in site.data.ms %}
 <li>
+<<<<<<< HEAD
 	{% if d.['Doc ID'] %}<a href="{{d.['Computed Doc Link']}}">{{d.['Display Name']}}</a> {% if d.['Target Audience'] %} {{d.['Target Audience']}}{% endif %}{% endif %}
+=======
+	{% if d.['Doc ID'] %}
+    <a href="{{d.['Computed Doc Link']}}">{{d.['Display Name']}}</a> {% if d.['Target Audience'] %} {{d.['Target Audience']}}{% endif %}{% endif %}
+>>>>>>> 6933755bcf8b49d360f4685a17c10e39a39aabd5
 </li>
 {% endfor %}
 </ul>
