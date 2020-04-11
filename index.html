@@ -21,16 +21,14 @@ layout: main
 
 </section>
 
+
 <ul>
-
 {% for d in site.data.ms %}
-
 <li>
-	{% if d.['Doc ID'] %}<a href="{{d.['Computed Doc Link']}}">Document Link</a> {% if d.['Target Audience'] %} {{d.['Target Audience']}}{% endif %}{% endif %}
+	{% if d.['Doc ID'] %}<a href="{{d.['Computed Doc Link']}}">{{d.['Display Name']}}</a> {% if d.['Target Audience'] %} {{d.['Target Audience']}}{% endif %}{% endif %}
 </li>
 {% endfor %}
 </ul>
-
 
 
 <div class="container">
