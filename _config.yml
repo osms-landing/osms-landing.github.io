@@ -32,7 +32,7 @@ plugins:
 
 data_pages:
     - dataset: ed 
-      permalink: /ed/:Link
+      permalink: /ed/:textid
       layout: list_item
       exclude:
           type: [2]
