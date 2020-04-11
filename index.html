@@ -33,6 +33,17 @@ layout: main
 {% endfor %}
 </ul>
 
+<ul>
+{% for d in site.data.ed %}
+<li>
+	{% if d.['Design ID'] %}
+	<a href="{{d.['Link']}}">{{d.['Full Design Name']}}</a> 
+	{% if d.['When Indexed'] %} {{d.['When Indexed']}}{% endif %}
+	{% endif %}
+</li>
+{% endfor %}
+</ul>
+
 
 <div class="container">
 	<div class="row">
