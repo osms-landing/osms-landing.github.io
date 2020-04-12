@@ -1,0 +1,86 @@
+<style>
+  .coming-soon * {
+    color: rgba(0,0,0,0.35) !important;
+    pointer-events: none;
+    text-decoration: none;
+  }
+
+  .coming-soon-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0,0,0,0.5);
+    color: white !important;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  /* black outline of text for contrast */
+  @supports (-webkit-text-stroke: 1px black) {
+    .coming-soon-banner {
+      -webkit-text-stroke: 1px black;
+      -webkit-text-fill-color: white;
+    }
+  }
+</style>
+<header id="header">
+  <div class="container d-flex">
+
+    <div class="logo mr-auto">
+      <h1 class="text-light"><a href="index.html"><span>OSMS</span></a></h1>
+    </div>
+
+    <nav class="nav-menu d-none d-lg-block">
+      <ul>
+        <li class="active"><a href="#header">Home</a></li>
+        <li><a href="#map">Map</a></li>
+        <li><a href="#contact">Features and Supporters</a></li>
+
+
+        <div class="dropdown_new">
+          <li><a href="">Take Action Now</a></li>
+
+          <!-- revealed dropdown menu -->
+          <div class="dropdown-content coming-soon" style="padding-bottom: 20px;">
+
+            <!-- links to guides -->
+            <div class="row text-center">
+              <li class="col-sm-12" style="font-size: 30px; font-family: 'Poppins', sans-serif">OSMS Guides</li>
+
+              <li class="col-sm-2"></li>
+              <li class="col-sm-4"><a
+                  href="https://docs.google.com/document/d/1-71FJTmI1Q1kjSDLP0EegMERjg_0kk_7UfaRE4r66Mg/edit"><img
+                    src="assets/img/osms-orange.png " style="width:auto;height:100px; margin-bottom:20px"></a></li>
+              <li class="col-sm-4"><a href="https://oscms.app.box.com/s/zh0aynd8hflxkfdaucs14ifs05z8d8dn"><img
+                    src="assets/img/osms-blue.png " style="width:auto;height:100px;margin-bottom:20px"></a></li>
+              <li class="col-sm-2"></li>
+            </div>
+
+            <div class="row" style="position: relative;">
+              <div class="coming-soon-banner">Coming soon!</div>
+              <li class="col-lg-2"></li>
+              {% for section in site.data.nav.actionNav %}
+              <li class="col-sm-3 col-lg-2">
+                <ul class="menu_content">
+                  <li class="dropdown-header-item">{{ section.title }}</li>
+                  {% for entry in section.sectionLinks %}
+                  <li class="text-left" style="margin: -10px 0;">
+                    <a href="{{ entry.url }}">{{ entry.pageTitle }}</a>
+                  </li>
+                  {% endfor %}
+                </ul>
+              </li>
+              {% endfor %}
+              <li class="col-lg-1"></li>
+            </div>
+          </div>
+        </div>
+      </ul>
+    </nav>
+  </div>
+</header>

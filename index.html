@@ -4,25 +4,19 @@
 
 layout: main
 ---
-
-<style>
-
-</style>
-
-
-
-
-<section id="super-banner">
+<!-- <section id="super-banner">
 	<div class="background-image"></div>
 	<div class="background-dimmer"></div>
 	<div class="text-overlay">
 		<h1>Open Source Medical Supplies</h1>
 	</div>
 
-</section>
+</section> -->
+{% include header.html %}
+{% include landing-page.html %}
 
-
-<ul>
+<!-- list links from ms.csv -->
+<!-- <ul>
 {% for d in site.data.ms %}
 <li>
 	{% if d.['Doc ID'] %}
@@ -42,13 +36,13 @@ layout: main
 	{% endif %}
 </li>
 {% endfor %}
-</ul>
+</ul> -->
 
 
 <div class="container">
 	<div class="row">
 		<div class="col-md-8 offset-md-2">
-			<section id="banner">
+			<!-- <section id="banner">
 				<img src="/assets/logos/osms_osms.svg" />
 			</section>
 			<section id="intro">
@@ -214,7 +208,7 @@ layout: main
 						<a href="https://www.resolve.ngo/osms.htm">our page on RESOLVE's website</a>.</p>
 
 
-			</section>
+			</section> -->
 			<section id="press">
 				<h1>Press</h1>
 				<p>
@@ -249,8 +243,10 @@ layout: main
 				</p>
 			</section>
 			<section id="footer">
-				<li>Copyright 2020</li><li><b>Open Source Medical Supplies</b></li><li><a href="http://opensourcemedicalsupplies.org">opensourcemedicalsupplies.org</a></li>
-				</section>
-			</div>
+				<li>Copyright 2020</li>
+				<li><b>Open Source Medical Supplies</b></li>
+				<li><a href="http://opensourcemedicalsupplies.org">opensourcemedicalsupplies.org</a></li>
+			</section>
 		</div>
-		</div>
+	</div>
+</div>

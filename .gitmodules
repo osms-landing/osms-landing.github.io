@@ -1,0 +1,3 @@
+[submodule "OSCMS"]
+	path = _includes/OSCMS
+	url = https://github.com/mfei1225/OSCMS.git

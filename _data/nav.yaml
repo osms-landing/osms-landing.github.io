@@ -1,0 +1,33 @@
+actionNav:
+ - title: Make Supplies
+   sectionLinks:
+     - pageTitle: Home Lab
+       url: /search.html?lab=home
+     - pageTitle: Fabrication Lab
+       url: /search.html?lab=fabrication
+     - pageTitle: Industrial Lab
+       url: /search.html?lab=industrial
+ - title: Connect with Us
+   sectionLinks:
+     - pageTitle: COVID Help Map
+       url: /helpmap.html
+     - pageTitle: OSMS Local Group Roster
+       url: /localgrouproster.html
+     - pageTitle: Local Response Guide
+       url: /localresponseguide.html
+ - title: Get Involved
+   sectionLinks:
+     - pageTitle: Volunteer with OSMS
+       url: /volunteer.html
+     - pageTitle: Submit a Design
+       url: /submitadesign.html
+     - pageTitle: Donate
+       url: /donate.html
+ - title: Learn More
+   sectionLinks:
+     - pageTitle: About Us
+       url: /about.html
+     - pageTitle: Affiliates
+       url: /affiliates.html
+     - pageTitle: Subscribe to Updates
+       url: /subscribe.html
