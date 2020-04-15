@@ -12,16 +12,15 @@ layout: main
 	</div>
 
 </section> -->
-{% include header.html %}
 {% include landing-page.html %}
 
 <!-- list links from ms.csv -->
 <!-- <ul>
 {% for d in site.data.ms %}
 <li>
-	{% if d.['Doc ID'] %}
-	<a href="{{d.['Computed Doc Link']}}">{{d.['Display Name']}}</a> 
-	{% if d.['Target Audience'] %} {{d.['Target Audience']}}{% endif %}
+	{% if d['Doc ID'] %}
+	<a href="{{d['Computed Doc Link']}}">{{d['Display Name']}}</a> 
+	{% if d['Target Audience'] %} {{d['Target Audience']}}{% endif %}
 	{% endif %}
 </li>
 {% endfor %}
@@ -30,9 +29,9 @@ layout: main
 <ul>
 {% for d in site.data.ed %}
 <li>
-	{% if d.['Design ID'] %}
-	<a href="{{d.['Link']}}">{{d.['Full Design Name']}}</a> 
-	{% if d.['When Indexed'] %} {{d.['When Indexed']}}{% endif %}
+	{% if d['Design ID'] %}
+	<a href="{{d['Link']}}">{{d['Full Design Name']}}</a> 
+	{% if d['When Indexed'] %} {{d['When Indexed']}}{% endif %}
 	{% endif %}
 </li>
 {% endfor %}

@@ -1,6 +1,7 @@
 ---
 permalink: /search
 layout: main
+crumbs: ['search']
 ---
 <script>
   $(document).ready(() => {
@@ -9,13 +10,26 @@ layout: main
     var searchParamVals = Array.from(sP.values());
 
     searchParamKeys.forEach((key, i) => {
-      debugger
       $('ul.params-display').append(`<li>key:${key}  value: ${searchParamVals[i]}</li>`)
     })
   })
+</script>
+
+<!-- <script type="module" src="{{ base.url | prepend: site.url }}/assets/js/airtable.js"></script> -->
+<script>
+  $(document).ready(() => {
+  })
+
 </script>
 
 <h1>Search page!</h1>
 <h3>Passed params:</h3>
 <ul class="params-display">
 </ul>
+
+<form>
+  <div class="form-group">
+    <input type="email" class="form-control" id="searchField" aria-describedby="textSearch" placeholder="Search Term">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

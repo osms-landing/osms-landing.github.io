@@ -1,0 +1,60 @@
+{
+  "name": "osms-landing.github.io",
+  "version": "1.0.0",
+  "description": "osms-jekyll",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --env=dev --progress --profile --colors && concurrently \"webpack-dev-server --env=dev\" \"bundle exec jekyll serve\"",
+    "build": "cross-env NODE_ENV=production webpack --env=prod --progress --profile --colors && cross-env JEKYLL_ENV=production bundle exec jekyll build"
+  },
+  "dependencies": {
+    "airtable": "^0.8.1",
+    "aos": "^2.3.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "babel-loader": "^8.1.0",
+    "browser-sync": "^2.26.7",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "concurrently": "^5.1.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "cross-env": "^7.0.2",
+    "css-loader": "^3.5.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-loader": "^4.0.0",
+    "eslint-plugin-import": "^2.20.2",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.2.0",
+    "http-server": "^0.12.1",
+    "imagemin-webpack-plugin": "^2.4.2",
+    "node-sass": "^4.13.1",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-scss": "^2.0.0",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.4",
+    "sw-precache": "^5.2.1",
+    "tapable": "1.1.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3",
+    "webpack-merge": "^4.2.2",
+    "webpack-plugin-critical": "^1.0.0",
+    "webpack-pwa-manifest": "^4.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osms-landing/osms-landing.github.io.git"
+  },
+  "author": "osms-dev-team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/osms-landing/osms-landing.github.io/issues"
+  },
+  "homepage": "https://github.com/osms-landing/osms-landing.github.io#readme"
+}
