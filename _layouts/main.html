@@ -25,38 +25,37 @@
         rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link href="assets/dukes_assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/dukes_assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-    <link href="assets/dukes_assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/dukes_assets/vendor/venobox/venobox.css" rel="stylesheet">
-    <link href="assets/dukes_assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="{{ 'assets/dukes_assets/vendor/bootstrap/css/bootstrap.min.css' | relative_url}}" rel="stylesheet">
+    <link href="{{ 'assets/dukes_assets/vendor/icofont/icofont.min.css' | relative_url}}" rel="stylesheet">
+    <link href="{{ 'assets/dukes_assets/vendor/boxicons/css/boxicons.min.css' | relative_url}}" rel="stylesheet">
+    <link href="{{ 'assets/dukes_assets/vendor/venobox/venobox.css' | relative_url}}" rel="stylesheet">
+    <link href="{{ 'assets/dukes_assets/vendor/aos/aos.css | relative_ur'l}}" rel="stylesheet ">
 
     <!-- Template Main CSS File -->
 
-    <link href="assets/dukes_assets/style.css" rel="stylesheet">
+    <link href="{{ 'assets/dukes_assets/style.css' | relative_url}}" rel="stylesheet">
 
 
     <!-- Critical JS Files -->
-    <script src="assets/dukes_assets/vendor/jquery/jquery.min.js"></script>
-    <script src="assets/dukes_assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/dukes_assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-    <script src="assets/dukes_assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+    <script src="{{ 'assets/dukes_assets/vendor/jquery/jquery.min.js' | relative_url }}"></script>
+    <script src="{{ 'assets/dukes_assets/vendor/bootstrap/js/bootstrap.bundle.min.js' | relative_url}}"></script>
+    <script src="{{ 'assets/dukes_assets/vendor/jquery.easing/jquery.easing.min.js' | relative_url }}"></script>
+    <script src="{{ 'assets/dukes_assets/vendor/jquery-sticky/jquery.sticky.js' | relative_url }}"></script>
 
     {% endif %}
 </head>
 
 <body>
     {{content}}
-    
+
     {% if page.isLanding %}
-    
+
     <!-- Vendor JS -->
-    <script src="assets/dukes_assets/vendor/venobox/venobox.min.js"></script>
-    <script src="assets/dukes_assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-    <script src="assets/dukes_assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/dukes_assets/vendor/aos/aos.js"></script>
-    
-    <script src="assets/dukes_assets/main.js"></script>
+    <script src="{{ 'assets/dukes_assets/vendor/venobox/venobox.min.js'  | relative_url}}"></script>
+    <script src=" {{ 'assets/dukes_assets/vendor/owl.carousel/owl.carousel.min.js'  | relative_url}}"></script>
+    <script src="{{ 'assets/dukes_assets/vendor/isotope-layout/isotope.pkgd.min.js'  | relative_url}}"></script>
+    <script src="{{ 'assets/dukes_assets/vendor/aos/aos.js'  | relative_url}}"></script>
+    <script src=" {{ 'assets/dukes_assets/main.js'  | relative_url}}"></script>
     {% endif %}
 </body>
 
