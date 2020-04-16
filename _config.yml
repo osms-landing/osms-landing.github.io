@@ -30,6 +30,13 @@ theme: minima
 plugins:
   - jekyll-feed
 
+data_pages:
+    - dataset: ed 
+      permalink: /ed/:textid
+      layout: list_item
+      exclude:
+          type: [2]
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
