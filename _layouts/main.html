@@ -20,10 +20,16 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
     <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-        rel="stylesheet">
-
+    <script>
+        $(function() {
+            var fonts = 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i';
+            if (document.createStyleSheet) {
+                document.createStyleSheet(fonts);
+            } else {
+                $("head").append($("<link rel='stylesheet' href='"+ fonts +"' type='text/css' media='screen' />"));
+            }
+        });
+    </script>
 
     <!-- Critical JS Files -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
